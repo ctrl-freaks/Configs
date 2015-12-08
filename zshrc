@@ -12,7 +12,8 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # plugins
-plugins=(git brew)
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+plugins=(brew git jsontools pip python sudo)
 
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -32,4 +33,5 @@ alias bundles.local="sudo vim ~/.vimrc.local"
 # project specific stuff? should be somewhere else me thinks
 alias projects="vim ~/Sites/"
 
+# get aliases and stuff from local
 source zshrc.local
