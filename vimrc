@@ -48,36 +48,41 @@ set backspace=indent,eol,start                  " allow backspacing over everyth
 set tabstop=2                                   " length of tabs
 set shiftwidth=2                                " length of auto tabs (inside code block)
 set softtabstop=2                               " length of tabs in insert mode
-set noexpandtab                                 " currently being overridden
+set shiftround                                  " round tabs to multiples of shiftwidth
+set expandtab                                   " currently being overridden
+
+" inoremap <S-Tab> <C-V><Tab><CR> this isnt working, cant toggle hard and soft tabs
 
 " Wrapping
 set nowrap                                      " should we make shortcut to toggle?
-
+set linebreak                                   " if wrap is on, only add a line break manually
 set textwidth=200                               " columns for text wrap
+
+" Buffer options
 set ruler                                       " coordinates bottom right
-set list                                        " display whitspace
+set list                                        " display whitespace
 set listchars=tab:\ ·,trail:·                   " characters to represent spaces and tabs
+set fillchars=vert:\ " empty is nicer on our term
+set showbreak=↪	                                " character to represent line break
+set splitbelow                                  " open new buffer below instead of above
+set splitright                                  " open new vert buffer on right
 
 " Improve performance
 set lazyredraw                                  " only redraw when necessary
-set showmatch																		" jump cursor to matching brace when you close a block
+set showmatch	                                  " jump cursor to matching brace when you close a block
 set matchtime=3                                 " defined match hop in tenths of a second
-set showbreak=↪																	" character to represent line break
-set splitbelow																	" 
-set splitright
-set fillchars=vert:\ " empty is nicer on our term
-set shiftround
-set linebreak
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set laststatus=2
-set completeopt=longest,menuone
+
+" Search
+set hlsearch                                    " highlight search term matches
+set incsearch                                   " turn incremental searching on
+set ignorecase                                  " ignore case when searching
+set smartcase                                   " only watch case if including an uppercase letter
+set laststatus=2                                " always show status line
+set completeopt=longest,menuone                 " uh
 set omnifunc=syntaxcomplete#Complete
 
-set clipboard+=unnamed " Share your clipboard with system
-set mouse=a            " Make mouse work!
+set clipboard+=unnamed                          " share your clipboard with system
+set mouse=a                                     " allow mouse use
 set modeline
 set modelines=10
 set shell=/bin/zsh
