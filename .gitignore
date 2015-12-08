@@ -1,1 +1,8 @@
+
+# directories
+
+# files
 .DS_Store
+vimrc.bundles.local
+zshrc.local
+

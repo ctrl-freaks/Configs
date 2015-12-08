@@ -32,3 +32,4 @@ alias bundles.local="sudo vim ~/.vimrc.local"
 # project specific stuff? should be somewhere else me thinks
 alias projects="vim ~/Sites/"
 
+source zshrc.local
