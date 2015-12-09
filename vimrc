@@ -9,28 +9,28 @@ set nocompatible                                " Disable legacy mode
 filetype on                                     " Must set to on before turning off
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim               " Set Vundle runtime path
+" Vundle
+set rtp+=~/.vim/bundle/Vundle.vim               " set Vundle runtime path
 
-call vundle#begin()                             " Init Vundle
+call vundle#begin()                             " begin Vundle
 
-if filereadable(expand("~/.vimrc.bundles"))     " Include Vundle plugins
+if filereadable(expand("~/.vimrc.bundles"))     " include Vundle plugin files
   source ~/.vimrc.bundles
   source ~/.vimrc.bundles.local
 endif
 
-call vundle#end()
+call vundle#end()                               " end Vundle
 
 " Settings
-syntax on
-filetype plugin indent on
+syntax on                                       " turn on syntax highlighting
+filetype plugin indent on                       " determine syntax via filetype and more
 
 let mapleader=","                               " change to easier mapleader
 
 " Spelling                                      " does this belong here? or in .local
 set spell spelllang=en_us
 setlocal spell spelllang=en_us
-
-nn <F7> :setlocal spell! spelllang=en_us<CR>    " Toggle spelling with the F7 key
+nn <F7> :setlocal spell! spelllang=en_us<CR>    " Toggle spelling with the F7 key (should this move?)
 
 " Formatting
 set number                                      " line numbers
@@ -62,10 +62,11 @@ set textwidth=200                               " columns for text wrap
 set ruler                                       " coordinates bottom right
 set list                                        " display whitespace
 set listchars=tab:\ ·,trail:·                   " characters to represent spaces and tabs
-set fillchars=vert:\ " empty is nicer on our term
+set fillchars=vert:\ " empty is nicer on our term   " define character to use for buffer separators
 set showbreak=↪	                                " character to represent line break
 set splitbelow                                  " open new buffer below instead of above
 set splitright                                  " open new vert buffer on right
+set laststatus=2                                " always show status line
 
 " Improve performance
 set lazyredraw                                  " only redraw when necessary
@@ -77,37 +78,38 @@ set hlsearch                                    " highlight search term matches
 set incsearch                                   " turn incremental searching on
 set ignorecase                                  " ignore case when searching
 set smartcase                                   " only watch case if including an uppercase letter
-set laststatus=2                                " always show status line
-set completeopt=longest,menuone                 " uh
-set omnifunc=syntaxcomplete#Complete
+
+" Autocomplete
+set completeopt=longest,menuone                 " display autocomplete as an optionlist like IDEs
+set omnifunc=syntaxcomplete#Complete            " turn on omnicompletion
 
 set clipboard+=unnamed                          " share your clipboard with system
 set mouse=a                                     " allow mouse use
-set modeline
-set modelines=10
-set shell=/bin/zsh
+set modeline                                    " allow to change expandtab within a file
+set modelines=10                                " set range for beginning or end of file for modeline
+set shell=/bin/zsh                              " set shell
 
-set wildmode=list:longest,list:full  " Tab completion
+" Tabs
+set wildmode=list:longest,list:full             " Tab completion
 set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*,*/nimcache/*
 set wildignore+=*.swp,*~,._*
 
 " History / File handling
+set history=999                                 " increase history (default = 20)
+set undolevels=999                              " moar undo (default=100)
+set autoread                                    " reload files if changed externally
+" set autowrite                                 " auto save on buffer switch (risky?)
 
-set history=999             " Increase history (default = 20)
-set undolevels=999          " Moar undo (default=100)
-set autoread                " reload files if changed externally
-set autowrite
+set showcmd                                     " show (partial) command in the status line"
+set showmode                                    " show what mode you are in (Normal/Insert/Visual)
 
-set showcmd " Show (partial) command in the status line"
-set showmode
-
-set backupdir=~/.vim/tmp/backup/      " where to put backup files.
-set directory=~/.vim/tmp/swap/        " where to put swap files.
-set backupskip=/tmp/*,/private/tmp/*  " make Vim able to edit crontab files again.
-set nobackup                            " enable backups
-set noswapfile                        " It's 2012, Vim.
+set backupdir=~/.vim/tmp/backup/                " where to put backup files.
+set directory=~/.vim/tmp/swap/                  " where to put swap files.
+set backupskip=/tmp/*,/private/tmp/*            " allow Vim to edit crontab files
+set nobackup                                    " disable backups
+set noswapfile                                  " disable swap files
 
 " Avoid formatting bullets
 set fo+=tcqlnr

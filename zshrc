@@ -34,4 +34,4 @@ alias bundles.local="sudo vim ~/.vimrc.local"
 alias projects="vim ~/Sites/"
 
 # get aliases and stuff from local
-source zshrc.local
+source ~/.zshrc.local
