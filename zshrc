@@ -36,7 +36,7 @@ alias projects="vim ~/Sites/"
 # get aliases and stuff from local
 source ~/.zshrc.local
 
-# NEW ALIASES
+# NEW ALIASES : this is me adding some text to test the slack integration!
 
 # zsh
 alias zrc='vim ~/.zshrc'
