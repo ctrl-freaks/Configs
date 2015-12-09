@@ -18,13 +18,17 @@ plugins=(brew git jsontools pip python sudo)
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# zsh goodness
+# setup zshell
 source $ZSH/oh-my-zsh.sh
 
-# dem aliases 0_0
+# alias zsh-config
+# alias zsh.config
+# alias zsh:config
 
-# edit important stuff
-alias zshconfig="sudo vim ~/.zshrc"
+# edit important stuf
+alias zsh:config="suvim ~/.zshrc"
+alias zsh:localconfig="sudo vim ~/."
+
 alias httpdconf="sudo vim /etc/apache2/httpd.conf"
 alias vimrc="sudo vim ~/.vimrc"
 alias bundles="sudo vim ~/.vimrc.bundles"
