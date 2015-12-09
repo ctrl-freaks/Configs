@@ -8,11 +8,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # command auto-correction
 ENABLE_CORRECTION="true"
 
-# red dots while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
 # plugins 
-# https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+# https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 plugins=(brew git jsontools pip python sudo)
 
 # user path
