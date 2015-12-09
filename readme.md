@@ -49,7 +49,7 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 * Sleuth
 * Emmet
 
-###Syntax####
+###Syntax Modes####
 * HTML5
 * CSS3
 * LESS
@@ -58,8 +58,7 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 * Python
 * Markdown
 
-
-###Syntax####
+###Color Schemes####
 * Flatlandia
 * Gruvbox
 
