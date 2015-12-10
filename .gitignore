@@ -3,6 +3,7 @@
 
 # files
 .DS_Store
+vimrc.local
 vimrc.bundles.local
 zshrc.local
 
