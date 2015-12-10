@@ -27,7 +27,7 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 ###Plugins####
 * Vundle
 * NERDTree
-* NREDTreeTabs
+* NERDTreeTabs
 * Ctrl-P
 * Airline
 * Ack
