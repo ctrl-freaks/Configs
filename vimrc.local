@@ -1,0 +1,15 @@
+
+" TODO
+" buffers
+" " add buffer / save buffer / close buffer
+" " buffer switching
+" " buffer listing
+
+
+" MAYBE USE
+" Map ctrl-movement keys to window switching
+
+" map <C-k> <Up>
+" map <C-j> <Down>
+" map <C-l> <Right>
+" map <C>h <Left>
