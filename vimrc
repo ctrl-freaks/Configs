@@ -30,7 +30,9 @@ let mapleader=","                               " change to easier mapleader
 " Spelling                                      " does this belong here? or in .local
 set spell spelllang=en_us
 setlocal spell spelllang=en_us
-nn <F7> :setlocal spell! spelllang=en_us<CR>    " Toggle spelling with the F7 key (should this move?)
+
+ " Toggle spelling with the F7 key (should this move?)
+nn <F7> :setlocal spell! spelllang=en_us<CR>
 
 " Formatting
 set number                                      " line numbers
@@ -117,7 +119,7 @@ set fo+=tcqlnr
 " set fo-=o
 set flp=^\\s*\\d\\+\\.\\s\\+\\\|^[-*+]\\s\\+
 
-if exists("&undodir")
+if exists("&undodir")                           " persistent undo
  set undodir=~/.vim/undo/
  set undofile
 endif

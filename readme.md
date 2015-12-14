@@ -25,7 +25,42 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 
 ##Vim##
 ###Plugins####
-(nick step in here bud)
+* Vundle
+* NERDTree
+* NERDTreeTabs
+* Ctrl-P
+* Airline
+* Ack
+* delimitMate
+* Commentary
+* Syntastic
+* Fugitive
+* GitGutter
+* Tabular
+* Surround
+* ZoomWin
+* Vitality
+* Multiple Cursors
+* Tagbar
+* YouCompleteMe
+* Ultisnips
+* vim-snippets
+* Expand Region
+* Sleuth
+* Emmet
+
+###Syntax Modes####
+* HTML5
+* CSS3
+* LESS
+* Javascript
+* Ruby
+* Python
+* Markdown
+
+###Color Schemes####
+* Flatlandia
+* Gruvbox
 
 ###Aliases###
 |Alias|Function                  |
