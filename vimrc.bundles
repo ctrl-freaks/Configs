@@ -1,6 +1,5 @@
-" Configure Vim Plugins
-" If we set all this up as a repo, put core plugins here only, 
-" put the rest in ~/.vimrc.bundles.local
+
+" Core vim bundles
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
