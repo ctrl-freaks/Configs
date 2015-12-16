@@ -11,7 +11,6 @@ https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
 * python
 * sudo
 
-
 ##Aliases##
 ####Custom####
 |Alias  |Function          |
