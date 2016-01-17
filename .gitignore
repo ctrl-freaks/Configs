@@ -2,9 +2,8 @@
 # files
 *.bak
 .DS_Store
-vimrc.local
-vimrc.bundles.local
-zshrc.local
+# vimrc.local
+# vimrc.bundles.local
+# zshrc.local
 
 # directories
-
