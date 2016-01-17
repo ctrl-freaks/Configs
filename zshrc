@@ -18,18 +18,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # setup zshell
 source $ZSH/oh-my-zsh.sh
 
-# edit config files
-alias config="suvim ~/.zshrc"
-alias localconfig="sudo vim ~/."
-
-alias httpdconf="sudo vim /etc/apache2/httpd.conf"
-alias vimrc="sudo vim ~/.vimrc"
-alias bundles="sudo vim ~/.vimrc.bundles"
-alias bundles.local="sudo vim ~/.vimrc.local"
-
-# project specific stuff? should be somewhere else me thinks
-alias projects="vim ~/Sites/"
-
 # get aliases and stuff from local
 source ~/.zshrc.local
 
+# zsh rec files
+alias zrc='vim ~/.zshrc'
+alias zrcl='vim ~/.zshrc.local'
