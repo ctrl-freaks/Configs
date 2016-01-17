@@ -13,7 +13,7 @@ ENABLE_CORRECTION="true"
 plugins=(brew git jsontools pip python sudo)
 
 # user path
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
 # setup zshell
 source $ZSH/oh-my-zsh.sh
