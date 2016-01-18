@@ -18,9 +18,15 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 # setup zshell
 source $ZSH/oh-my-zsh.sh
 
-# get aliases and stuff from local
-source ~/.zshrc.local
-
-# zsh rec files
+# zsh rec files alises
 alias zrc='vim ~/.zshrc'
 alias zrcl='vim ~/.zshrc.local'
+
+# vim rec file aliases
+alias vrc='vim ~/.vimrc'
+alias vrcl='vim ~/.vimrc.local'
+alias vrcb='vim ~/.vimrc.bundles'
+alias vrcbl='vim ~/.vimrc.bundles.local'
+
+# get aliases and stuff from local
+source ~/.zshrc.local

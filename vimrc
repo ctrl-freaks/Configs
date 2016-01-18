@@ -374,9 +374,3 @@ imap <C-b> <ESC>:CtrlPBufTag<CR>
 
 " Use :W! to write to a file using sudo if you forgot to 'sudo vim file'
 ca W! %!sudo tee > /dev/null %
-
-# vim rec file aliases
-alias vrc='vim ~/.vimrc'
-alias vrcl='vim ~/.vimrc.local'
-alias vrcb='vim ~/.vimrc.bundles'
-alias vrcbl='vim ~/.vimrc.bundles.local'
