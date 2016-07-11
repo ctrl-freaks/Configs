@@ -1,32 +1,12 @@
 
-# path to oh-my-zsh installation
+# Path to oh-my-zsh installation
 export ZSH=~/.oh-my-zsh
-
-# set name of the theme to load
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-# command auto-correction
-ENABLE_CORRECTION="true"
-
-# plugins 
-# https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
-plugins=(brew git jsontools pip python sudo)
 
 # user path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 
-# setup zshell
-source $ZSH/oh-my-zsh.sh
-
-# zsh rec files alises
-alias zrc='vim ~/.zshrc'
-alias zrcl='vim ~/.zshrc.local'
-
-# vim rec file aliases
-alias vrc='vim ~/.vimrc'
-alias vrcl='vim ~/.vimrc.local'
-alias vrcb='vim ~/.vimrc.bundles'
-alias vrcbl='vim ~/.vimrc.bundles.local'
-
 # get aliases and stuff from local
 source ~/.zshrc.local
+
+# setup zshell
+source $ZSH/oh-my-zsh.sh

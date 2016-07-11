@@ -1,2 +1,14 @@
 
-" Put your local zsh settings here
+# Power Level 9K settings
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs virtualenv)
+
+# POWERLEVEL9K_HOME_ICON=''
+# POWERLEVEL9K_HOME_SUB_ICON=''
+# POWERLEVEL9K_FOLDER_ICON=''
+
+# https://github.com/robbyrussell/oh-my-zsh/wiki/plugins
+plugins=(brew git jsontools pip python sudo virtualenv)
