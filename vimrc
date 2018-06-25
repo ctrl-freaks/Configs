@@ -149,7 +149,7 @@ let g:rehash256 = 1
 
 " Set colors
 set background=dark
-colorscheme gruvbox
+colorscheme onedark
 
 " Add a more detailed theme for airline
 let g:airline_theme = 'tomorrow'
@@ -192,6 +192,8 @@ let g:go_fmt_command = "goimports"
 " Play nice with YCM
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsListSnippets="<c-e>"
+"
+let g:ycm_server_python_interpreter = '/usr/local/bin/python'
 
 " Use AG
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -233,11 +235,18 @@ let g:is_bash=1
 " Vitality
 let g:always_assume_iterm = 0
 
+let g:ale_linters = {
+  \ 'javascript': ['standard'],
+\}
+
+let g:ale_sign_column_always = 1
+let g:airline#extensions#ale#enabled = 1
+
 " Enable syntastic syntax checking
-let g:syntastic_enable_signs   = 1
+"let g:syntastic_enable_signs   = 1
 
 " Turn off jslint errors by default
-let g:JSLintHighlightErrorLine = 0
+" let g:JSLintHighlightErrorLine = 0
 
 " Stop netrw
 let g:netrw_silent = 1

@@ -1,2 +1,19 @@
+# plutus project
+alias plutus_run='cd ~/Sites/plutus/; source env/bin/activate; python run.py'
 
-" Put your local zsh settings here
+alias chrome_nocors='open -a Google\ Chrome --args --disable-web-security'
+
+alias pluterrlog='tail -f ~/Sites/plutus/logs/apache_error.log'
+alias plutacclog='tail -f ~/Sites/plutus/logs/apache_access.log'
+alias plutdeflog='tail -f ~/Sites/plutus/logs/default.log'
+
+alias plutus_db_drop='~/sites/plutus; mongo baseclass --eval "db.dropDatabase()"'
+alias plutus_db_restore='~/sites/plutus; mongorestore --dir dump/db/baseclass --db baseclass'
+
+alias plutus_build='r.js -o static/js/build.js'
+
+alias arestart='sudo apachectl restart'
+
+alias cdp='cd ~/sites/plutus'
+
+source ~/.iterm2_shell_integration.zsh
